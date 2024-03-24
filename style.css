@@ -1,0 +1,134 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+
+    color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.SUV {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sedan, .SUV, .luxury {
+    height: 28rem;
+    width: 18.5rem;
+
+    padding: 2.5rem;
+
+    box-sizing: border-box;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-family: 'Lexend Deca';
+
+    line-height: 1.5rem;
+
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+img {
+    display: block;
+}
+
+button {
+    border: 1px solid hsl(0, 0%, 95%);
+
+    background-color: hsl(0, 0%, 95%);
+
+    padding: 1rem;
+
+    font-family: 'Lexend Deca';
+
+    width: 146px;
+
+    border-radius: 25px;
+
+    margin-top: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+}
+
+.SUV button {
+    color: hsl(184, 100%, 22%);
+}
+
+.SUV button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin: 17.5rem auto;
+    }
+    main {
+        flex-direction: column;
+    }
+
+    .sedan {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .luxury {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
